@@ -160,7 +160,7 @@ function loadResource(index,resource,onSuccess,onError,strict){
  *     const svg = res.item4;
  * });
  */
-export default function loadResources(bundle,cb,cbProcess,strict){
+module.exports = function loadResources(bundle,cb,cbProcess,strict){
     strict = strict === undefined ? true : strict;
     cbProcess = cbProcess || noop;
 
